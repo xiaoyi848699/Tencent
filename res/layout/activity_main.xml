@@ -8,13 +8,13 @@
     <ImageView
         android:id="@+id/iv_bg1"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="250dp"
         android:background="@drawable/qq_com_bg_pic" />
 
     <ImageView
         android:id="@+id/iv_bg2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="250dp"
         android:background="@drawable/qq_setting_me_bgmask" />
 
     <com.xiaoyi.tencent.view.SlidingMenu
@@ -29,7 +29,8 @@
             android:orientation="horizontal" >
 
             <include layout="@layout/left_menu" />
-
+            <include layout="@layout/main_fragment" />
+<!-- 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -51,7 +52,7 @@
                     android:onClick="toggleMenu"
                     android:visibility="gone"
                     android:text="右边菜单" />
-            </LinearLayout>
+            </LinearLayout> -->
 
             <include layout="@layout/right_menu" />
         </LinearLayout>

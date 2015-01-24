@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <color name="window_bg">#030303</color>
-    <color name="main_color">#4acd8b</color>
-    <color name="main_color50">#ee4acd8b</color>
-    <color name="main_color_dowm">#37b172</color>
-    <color name="main_color50_dowm">#ee37b172</color>
+    <color name="main_color">#18b4ed</color>
+    <color name="main_color50">#ee18b4ed</color>
     <color name="transparent">#00000000</color>
     <color name="transparent10">#10ffffff</color>
     <color name="transparent20">#20ffffff</color>
@@ -36,12 +34,15 @@
     <color name="black1"> #111111</color>
     <color name="black3"> #333333</color>
     <!-- <color name="black_top">#1b1e26</color> -->
-    <color name="black_top">#4acd8b</color>
-    <color name="black_top50">#804acd8b</color>
-    <color name="black_top40">#644acd8b</color>
-    <color name="black_top90">#dd1b1e26</color>
+    <color name="main_top">#18b4ed</color>
+    <color name="main_top_dowm">#14a1d6</color>
+    <color name="main_top_up">#3bc4f8</color>
+    <color name="main_top50">#8018b4ed</color>
+    <color name="main_top40">#6418b4ed</color>
+    <color name="main_top90">#dd18b4ed</color>
     <!-- <color name="black_bottom">#10131b</color> -->
    <color name="black_bottom">#ffffff</color>
+   <color name="main_bottom">#f9f9f9</color>
     <color name="blue">#33d9fd</color>
     <color name="red"> #FF0000</color>
     <color name="red90"> #90FF0000</color>

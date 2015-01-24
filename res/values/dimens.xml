@@ -15,7 +15,7 @@
  	<dimen name="member_card_height1">300dp</dimen>
      
      
-      <dimen name="main_tab_title_height">50dp</dimen>
+      <dimen name="main_tab_title_height">55dp</dimen>
     <dimen name="main_tab_title_size">20sp</dimen>
     <dimen name="main_bottom_bar">60dp</dimen>
     
@@ -48,7 +48,7 @@
      <dimen name="hight_1">150dp</dimen>
     
     <dimen name="btn_ofen_hight">40dp</dimen>
-    <dimen name="btn_mune_ofen_hight">40dp</dimen>
+    <dimen name="btn_mune_ofen_hight">35dp</dimen>
     
    
    

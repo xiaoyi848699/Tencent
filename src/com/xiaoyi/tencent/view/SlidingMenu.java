@@ -33,6 +33,16 @@ public class SlidingMenu extends HorizontalScrollView
 	public boolean isLeftOpen;
 	public boolean isRightOpen;
 	
+	private onChangeListener mChangeListener;
+	
+
+	public onChangeListener getmChangeListener() {
+		return mChangeListener;
+	}
+
+	public void setmChangeListener(onChangeListener mChangeListener) {
+		this.mChangeListener = mChangeListener;
+	}
 
 	Context context;
 
@@ -158,15 +168,19 @@ public class SlidingMenu extends HorizontalScrollView
 			{
 				this.smoothScrollTo(mMenuWidth, 0);
 				isLeftOpen = false;
+				mChangeListener.closeLeft();
 			} else if(scrollX<mMenuWidth / 2){
 				this.smoothScrollTo(0, 0);
 				isLeftOpen = true;
+				mChangeListener.openLeft();
 			}else if(scrollX>=mMenuWidth+30){
 				this.smoothScrollTo(mMenuWidth*2, 0);
 				isRightOpen = true;
+				mChangeListener.openRight();
 			}else{
 				this.smoothScrollTo(mMenuWidth, 0);
 				isRightOpen = false;
+				mChangeListener.closeRight();
 			}
 			return true;
 		}
@@ -182,6 +196,7 @@ public class SlidingMenu extends HorizontalScrollView
 			return;
 		this.smoothScrollTo(0, 0);
 		isLeftOpen = true;
+		mChangeListener.openLeft();
 	}
 	/**
 	 * 打开右边菜单
@@ -192,6 +207,7 @@ public class SlidingMenu extends HorizontalScrollView
 			return;
 		this.smoothScrollTo(mMenuWidth*2, 0);
 		isRightOpen = true;
+		mChangeListener.openRight();
 	}
 
 	public void closeMenuLeft()
@@ -200,6 +216,7 @@ public class SlidingMenu extends HorizontalScrollView
 			return;
 		this.smoothScrollTo(mMenuWidth, 0);
 		isLeftOpen = false;
+		mChangeListener.closeLeft();
 	}
 	/**
 	 * 关闭右边菜单
@@ -210,6 +227,7 @@ public class SlidingMenu extends HorizontalScrollView
 			return;
 		this.smoothScrollTo(mMenuWidth, 0);
 		isRightOpen = false;
+		mChangeListener.closeRight();
 	}
 
 	/**
@@ -309,4 +327,10 @@ public class SlidingMenu extends HorizontalScrollView
 
 	}
 
+	public interface onChangeListener {  
+		void openLeft();
+		void openRight();
+		void closeLeft();
+		void closeRight();
+	}
 }
