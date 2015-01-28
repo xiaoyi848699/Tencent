@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebecee" >
+     	<LinearLayout 
+      	    android:id="@+id/search"
+      	    android:layout_width="match_parent"
+      	    android:layout_height="@dimen/btn_hight_2"
+      	    android:gravity="center"
+      	    android:background="@drawable/eby"
+      	    android:orientation="horizontal"
+      	    android:layout_margin="@dimen/margin_padding3">
+			 <ImageView 
+			     android:layout_width="@dimen/image_hight_3"
+			     android:layout_height="@dimen/image_hight_3"
+			     android:src="@drawable/skin_searchbar_icon"/>
+      	    <TextView 
+      	        android:layout_width="wrap_content"
+      	        android:layout_height="wrap_content"
+      	        android:text="搜索"
+      	        android:textColor="@color/black90"
+      	        android:textSize="@dimen/textsize5"/>
+			 </LinearLayout>
+
+      	<RelativeLayout 
+      	    android:id="@+id/fragment_internet_hint"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="@dimen/btn_ofen_hight"
+      	    android:clickable="true"
+      	    android:onClick="btnClick"
+      	    android:visibility="gone"
+      	    android:background="@drawable/error_hint_yellow_bg"
+      	  >
+      	    <ImageView 
+      	        android:id="@+id/iv"
+      	        android:layout_width="wrap_content"
+      	        android:layout_height="wrap_content"
+      	        android:layout_centerVertical="true"
+      	        android:layout_margin="@dimen/margin_padding3"
+      	        android:src="@drawable/error_hint"/>
+      	    <TextView android:layout_width="wrap_content"
+      	        android:layout_height="wrap_content"
+      	        android:text="世界上最遥远的距离就是没网。检查设置"
+      	        android:layout_toRightOf="@id/iv"
+      	        android:layout_centerVertical="true"
+      	        android:singleLine="true"
+      	        android:textColor="@color/black"
+      	        android:layout_marginLeft="@dimen/margin_padding0"/>
+      	    <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/margin_padding6"
+                    android:src="@drawable/icon_right" >
+                </ImageView>
+      	</RelativeLayout>
+
+</LinearLayout>

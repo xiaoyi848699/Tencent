@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<RelativeLayout 
+		     android:id="@+id/titleShow"
+		     android:layout_width="fill_parent"
+	        android:layout_height="@dimen/main_tab_title_height"
+	        android:background="@color/main_top">
+        
+  		
+		    <ImageView
+		        android:id="@+id/small_image_head_bg"
+	            android:layout_width="@dimen/image_hight_6"
+	            android:layout_height="@dimen/image_hight_6"
+	            android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+	            android:onClick="btnClick"
+	            android:layout_marginLeft="@dimen/margin_padding4"
+	            android:background="@drawable/circle"
+		    />
+		    <ImageView
+	            android:id="@+id/small_image_head"
+	            android:layout_width="@dimen/image_hight_6"
+	            android:layout_height="@dimen/image_hight_6"
+	            android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+	            android:layout_marginLeft="@dimen/margin_padding4"
+	            android:padding="@dimen/margin_padding0"
+	            android:src="@drawable/f4"
+		    />
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:orientation="horizontal">
+      		<Button
+      		    android:id="@+id/msg_info"
+        		android:layout_width="65dp" 
+        		android:layout_height="@dimen/btn_mune_ofen_hight" 
+        		android:text="消息"
+        		android:gravity="center"
+        		android:textSize="@dimen/textsize5"		
+        		android:background="@drawable/left_circle_down"
+				android:textColor="#ffffff" /> 
+      		<Button
+      		    android:id="@+id/call_info"
+        		android:layout_width="65dp" 
+        		android:layout_height="@dimen/btn_mune_ofen_hight" 
+        		android:text="通话"
+        		android:gravity="center"
+        		android:textSize="@dimen/textsize5"	
+        		android:background="@drawable/right_circle"	
+				android:textColor="#ffffff" /> 
+		        
+		    </LinearLayout>
+			 <ImageButton
+		            android:id="@+id/right_mune"
+		            android:layout_width="@dimen/btn_hight_2"
+		            android:layout_height="@dimen/btn_hight_2"
+		            android:layout_alignParentRight="true"
+				    android:layout_centerVertical="true"
+				    android:background="@color/transparent"
+				    android:layout_marginRight="@dimen/margin_padding3"
+		            android:src="@drawable/skin_conversation_right_drawer_btn"
+		    />
+      	</RelativeLayout>
+     
+      	<com.xiaoyi.tencent.utils.PullToRefreshListView 
+      	    android:id="@+id/msg_listview"
+      	    android:layout_width="match_parent"
+      	    android:layout_height="match_parent"
+      	    android:layout_below="@id/titleShow"
+      	    android:divider="@color/black40"
+      	    android:dividerHeight="0.1dp"
+      	    />
+      	<ImageView 
+      	    android:id="@+id/call_bg_iv"
+      	    android:layout_below="@id/titleShow"
+      	    android:layout_width="match_parent"
+      	    android:layout_height="match_parent"
+      	    android:visibility="gone"
+      	    android:scaleType="fitXY"
+      	    android:src="@drawable/call_bg"/>
+
+</RelativeLayout>
